@@ -1,0 +1,253 @@
+.weatherApp-out-cover {
+    width: 100wh;
+    min-height: 100vh;
+    background-image: url(./asset/IMG/cloudAndSun-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.weatherApp-main-container {
+    display: flex;
+
+    width: 100wh;
+    min-height: 100vh;
+
+    background-image: linear-gradient(rgba(130, 130, 130, 0.459), rgba(0, 0, 0, 0.499));
+    background-position: cover;
+}
+
+.weatherApp-sub-conatiner-1 {
+    position: relative;
+    width: 70%;
+    padding: 40px 5%;
+
+    color: rgb(235, 235, 235);
+}
+
+.weatherApp-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.nav-btn {
+    font-size: 2rem;
+}
+
+.weatherApp-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weatherApp-sub-conatiner-1 .weatherApp-search-mobile {
+    display: none;
+}
+
+.weatherApp-data-hold-div {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    bottom: -45px;
+
+    width: 100%;
+    margin: 10% 0;
+}
+
+.weatherApp-temp {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 25px;
+}
+
+.weatherApp-temp h2 {
+    font-size: 7rem;
+}
+
+.weatherApp-temp p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.cityName-dateTime {
+    display: flex;
+    flex-direction: column;
+}
+
+.cityName-dateTime div {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 3px;
+}
+
+.cityName-dateTime div h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.cityName-dateTime div img {
+    margin-left: 10px;
+    width: 52px;
+    height: 52px;
+}
+
+.cityName-dateTime h4 {
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.cityName-dateTime p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.weatherApp-sub-conatiner-2 {
+    position: relative;
+
+    width: 30%;
+    padding: 30px;
+
+    color: rgb(197, 197, 197);
+
+    background-color: rgba(4, 0, 28, 0.673);
+}
+
+.weatherApp-search-mobile {
+    display: block;
+
+    width: 100%;
+    padding-bottom: 25px;
+
+    text-align: center;
+
+    color: black;
+}
+
+.weatherApp-search-mobile-wrap {
+    display: flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 0.6rem;
+
+    background-color: rgba(255, 255, 255, 0.149);
+}
+
+.weatherApp-search-mobile input {
+    width: calc(100% - (20px + 1.3rem));
+    padding: 10px;
+
+    font-size: 1.3rem;
+    color: white;
+
+    border: none;
+    border-radius: 0.6rem;
+    outline: none;
+
+    background-color: transparent;
+}
+
+.weather-app-search-btn {
+    padding: 10px 10px;
+
+    color: rgba(211, 211, 211, 0.556);
+    font-size: 1.3rem;
+
+    border-left: 2px solid rgba(122, 122, 122, 0.238);
+}
+
+.more-details-div-head {
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.more-details-div hr {
+    width: 100%;
+    height: 0;
+    border: none;
+    border-bottom: 2px solid rgb(155, 155, 155);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 30px 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: rgb(122, 122, 122);
+    font-size: 0.9rem;
+}
+
+footer p a {
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+}
+
+@media only screen and (max-width: 800px) {
+    .weatherApp-main-container {
+        flex-direction: column;
+    }
+
+    .weatherApp-sub-conatiner-1 {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .nav-btn {
+        font-size: 1.7rem;
+    }
+
+    .weatherApp-logo {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .weatherApp-sub-conatiner-1 .weatherApp-search-mobile {
+        display: block;
+    }
+
+
+    .weatherApp-data-hold-div {
+        position: relative;
+
+        flex-direction: column;
+
+        padding: 0;
+        margin: 0;
+
+        text-align: center;
+
+        bottom: auto;
+    }
+
+    .weatherApp-temp {
+        margin-right: 0;
+    }
+
+    .weatherApp-sub-conatiner-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .weatherApp-sub-conatiner-2 .weatherApp-search-mobile {
+        display: none;
+    }
+
+}
