@@ -9,7 +9,7 @@ function App() {
   const [iconV, setIconV] = useState(''); 
   const search = evt => {
 
-      fetch('https://api.openweathermap.org/data/2.5/weather?q='+[query]+'&units=metric&appid=a4ecde6f9d7816f1239c70b5bdd38d8f')
+      fetch('https://api.openweathermap.org/data/2.5/weather?q='+[query]+'&units=metric&appid={API Key}')
 
         .then(resp => resp.json())
         .then(result => {
